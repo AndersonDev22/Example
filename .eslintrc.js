@@ -11,6 +11,7 @@ module.exports = {
     'next/core-web-vitals',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
+    'plugin:storybook/recommended',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -21,17 +22,15 @@ module.exports = {
     sourceType: 'module',
   },
   plugins: ['react', '@typescript-eslint', 'react-hooks'],
-
   settings: {
     react: {
       version: 'detect',
     },
   },
-
   rules: {
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     'react/react-in-jsx-scope': 'off',
-    'react-hooks/rules-of-hooks': 'error', // Checks rules of Hooks
-    'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'warn',
   },
 };
